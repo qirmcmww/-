@@ -39,7 +39,6 @@
     * 但是这种0-1脉冲函数不太合理，远方的路口距离远，影响不会特别大。
     * 于是引入高斯模糊，让高斯模糊函数的方差随着距离的增大而增大，这样距离较远的TBT信息就能够减小其概率值，从而改变0-1脉冲函数（缩减成概率值）。
 #### 红绿灯场景
-![d15f62d629251d371f43a0a90ab7051](https://github.com/nieting1997/-/assets/90097659/91644352-02ec-4725-87c0-53c503cf83d6)
 * 当红绿灯状态为红灯时，在路口前刹停，自车减速
 * 当红绿灯状态为绿灯时，通过路口，自车不减速
 * 当红绿灯状态从绿灯变为黄灯或者绿灯闪烁
@@ -53,10 +52,5 @@
 * 红灯
 * unknown灯
 前四种灯可以通过地图+感知灯实实在在的看到，后一种灯应对遮挡、漏检等场景无法获知灯的类型。
-![aa689f765b826cf9eb6c56fd590dfa0](https://github.com/nieting1997/-/assets/90097659/eb7b39b6-bf70-4468-a368-3092dc18c512)
-
-
 当收到unknown灯时，需要推导红绿灯。
-
-<img src="/Users/mac/Library/Application Support/typora-user-images/image-20240616125640169.png" alt="image-20240616125640169" style="zoom:75%;" />
-
+![aa689f765b826cf9eb6c56fd590dfa0](https://github.com/nieting1997/-/assets/90097659/eb7b39b6-bf70-4468-a368-3092dc18c512)
